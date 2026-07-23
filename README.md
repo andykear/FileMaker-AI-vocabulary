@@ -66,7 +66,7 @@ The companion to a set of skills and tools that reverse-engineer FileMaker's und
 
 ## Provenance
 
-Function signatures, return types, and platform support come from [Claris FileMaker Pro Help](https://help.claris.com/en/pro-help/) — Claris's published facts, compression the only transformation. The verified internal step IDs come from the Clockwork Script XML skill; Claris doesn't publish them, they're original reverse-engineering work. If republishing, credit Claris for the function and compatibility data and the Clockwork FileMaker XML skills for the step IDs.
+Function signatures, return types, and platform support come from [Claris FileMaker Pro Help](https://help.claris.com/en/pro-help/) — Claris's published facts, compression the only transformation. The verified internal step and IDs come from the Clockwork Script XML skill; Claris doesn't publish them, they're original reverse-engineering work. If republishing, credit Claris for the function and compatibility data and the Clockwork FileMaker XML skills for the step IDs.
 
 ## Licence & contributing
 
@@ -76,7 +76,7 @@ CC BY 4.0 — free to use, share, and adapt with attribution. Found something mi
 
 | Version | Notes |
 |---|---|
-| 1.0 | FileMaker 26 baseline. 368 functions (371 signature lines; `Substitute`, `JSONSetElement`, and `ComputeModel` carry a second signature recovered from description prose the Format field omits). 216 script steps with platform support, each carrying its verified internal ID from the Script XML skill. ~7,000 tokens total. |
+| 1.0 | FileMaker 26 baseline. 368 functions, 216 script steps with platform support, each carrying its verified internal ID from the Script XML skill. ~7,000 tokens total. |
 
 ---
 

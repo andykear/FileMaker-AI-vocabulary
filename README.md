@@ -66,7 +66,7 @@ The companion to a set of skills and tools that reverse-engineer FileMaker's und
 
 ## Provenance
 
-Function signatures, return types, and platform support come from [Claris FileMaker Pro Help](https://help.claris.com/en/pro-help/) — Claris's published facts, compression the only transformation. The verified internal step and IDs come from the Clockwork Script XML skill; Claris doesn't publish them, they're original reverse-engineering work. If republishing, credit Claris for the function and compatibility data and the Clockwork FileMaker XML skills for the step IDs.
+Function signatures, return types, and platform support come from Claris FileMaker Pro Help — Claris's published facts, compression the only transformation. The script steps and their verified internal IDs are drawn from the companion Clockwork Script XML Skill — Claris doesn't publish the IDs, they're original reverse-engineering work from that repo. If republishing, credit Claris for the function and compatibility data and the Clockwork FileMaker XML skills for the step IDs.
 
 ## Licence & contributing
 

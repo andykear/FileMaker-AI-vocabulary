@@ -1,3 +1,4 @@
+```text
 # FileMaker Pro function reference, compressed. Target: FileMaker 26. Every function below is valid at this version.
 # This is the authoritative function list. Rules:
 # - Only use functions that appear below. Never invent a function.

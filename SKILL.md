@@ -22,8 +22,8 @@ Created by Andrew Kear of Clockwork Creative Technology. Licence: CC BY 4.0.
 
 Before producing any FileMaker function or script step in output, verify it against the relevant reference file. Each file carries its own header restating these rules.
 
-- `references/filemaker_function_stubs.md` — 368 functions (371 signature lines): `FunctionName ( params ) → return type`.
-- `references/filemaker_scriptstep_stubs.md` — 216 script steps: `Step Name   #internalID`, with `⚠` platform flags where support is not universal.
+- `references/clockwork_functions.md` — 368 functions (371 signature lines): `FunctionName ( params ) → return type`.
+- `references/clockwork_scriptsteps.md` — 216 script steps: `Step Name   #internalID`, with `⚠` platform flags where support is not universal.
 
 ## What this skill does not cover
 

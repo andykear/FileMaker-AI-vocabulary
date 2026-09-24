@@ -50,19 +50,30 @@ Model-agnostic by design: the files are plain markdown, readable by any LLM or h
 "Does FileMaker have a JSONMerge function?"                   → answered no, pointed to the real one
 ```
 
-## The FileMaker XML suite
+## The rest of the collection
 
-The companion to a set of skills and tools that reverse-engineer FileMaker's undocumented clipboard formats. Those decode formats Claris has never published; this compresses the formats Claris *does* document into the smallest resident form. Different work, same goal: AI that generates FileMaker that actually works.
+**[Menu](https://github.com/andykear)**
 
-**[Script XML Skill](https://github.com/andykear/FileMaker-XMLsnippet-Claude-Skill)** (XMSS, XMSC, XMFN) — the full script step ID dictionary and the hidden paste-handler rules that decide whether your XML survives the trip into FileMaker. This vocabulary's IDs are cross-referenced from it.
+**Reference skills**
 
-**[Layout XML Skill](https://github.com/andykear/FileMaker-XMLsnippet-Layout-Claude-Skill)** (XML2) — all 18 layout object types mapped, every flag decoded, element order confirmed against native output. Verified across 45+ layouts in 10 production files.
+**[FileMaker Second Opinion](https://github.com/andykear/FileMaker-second-opinion)**\
+**[FileMaker AI Vocabulary](https://github.com/andykear/FileMaker-AI-vocabulary)**
 
-**[Field, Table & Value List Definitions](https://github.com/andykear/FileMaker-XML-field-definitions)** (XMFD, XMTB, XMVL) — schema definition XML, verified down to the individual option level.
+**Research / Specialist**
 
-**[XML Inspector](https://github.com/andykear/FileMaker-XML-inspector-open-source)** (SaXML) — full-catalog dependency analysis of a Save as XML export, in the browser. Finds unreferenced objects, silent-failure risks, broken references, and diffs two solution versions.
+**[FileMaker XML bit-flags](https://github.com/andykear/FileMaker-XML-bit-flags)** (SaXML)\
+**[FileMaker AI Grammar](https://github.com/andykear/FileMaker-AI-grammar)**
 
-**[XML Scrubber](https://github.com/andykear/FileMaker-XML-scrubber)** — strips API keys, passwords and internal hostnames out of FileMaker XML before you hand it to an AI tool.
+**Generation, paste-ready FileMaker XML**
+
+**[Script XML Skill](https://github.com/andykear/FileMaker-XMLsnippet-Claude-Skill)** (XMSS, XMSC, XMFN)\
+**[Layout XML Skill](https://github.com/andykear/FileMaker-XMLsnippet-Layout-Claude-Skill)** (XML2)\
+**[Field, Table & Value List Definitions](https://github.com/andykear/FileMaker-XML-field-definitions)** (XMFD, XMTB, XMVL)
+
+**Analyse a FileMaker solution in your browser**
+
+**[Clockwork Inspector](https://github.com/andykear/FileMaker-XML-inspector-open-source)** (SaXML)\
+**[XML Scrubber](https://github.com/andykear/FileMaker-XML-scrubber)** (SaXML + others)
 
 ## Provenance
 

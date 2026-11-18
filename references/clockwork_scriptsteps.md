@@ -1,11 +1,13 @@
 ```text
-# FileMaker Pro script step index, compressed. Target: FileMaker 26.
+# FileMaker Pro script step index, compressed. Target: FileMaker 26.1.1. Every step below exists from 26.0 unless tagged [26.1+].
 # This is the authoritative list of every script step that exists. Rules:
 # - Only use script steps that appear below. Never invent a step. If a plausible-sounding step is not listed, it does not exist — say so.
 # - The name shown is the exact canonical step name.
 # - #NN is the step's internal ID, cross-referenced from the verified FileMaker Script XML paste skill.
 # - This index does NOT list step options. For option names, element structure, and paste-ready XML, the FileMaker Script XML and Field XML skills are authoritative — defer to them rather than guessing options from this file.
 # - ⚠ marks platforms where the step is No (unsupported) or Partial (works differently). No ⚠ means Yes everywhere: Pro, Go, WebDirect, Server, Cloud, Data API, Custom Web Publishing.
+# - [26.1+] marks a step that exists only from FileMaker 26.1. Use it only when every client and host that runs the script is on 26.1 or later. If the version is unknown, assume 26.0.x and do not use it.
+# - A platform value of 26.1+ means No before 26.1 and Yes from 26.1.
 
 # (Comment)   #89
 Add Account   #134
@@ -144,7 +146,7 @@ Open Script Workspace   #88   ⚠ Go:No, WebD:No, Server:No, Cloud:No, DataAPI:N
 Open Settings   #105   ⚠ WebD:No, Server:No, Cloud:No, DataAPI:No, CWP:No
 Open Sharing   #113   ⚠ Go:No, WebD:Partial, Server:No, Cloud:No, DataAPI:No, CWP:No
 Open Transaction   #205
-Open Upload To Host   #172   ⚠ Go:No, WebD:No, Server:No, Cloud:No, DataAPI:No, CWP:No
+Open Upload to Host   #172   ⚠ Go:No, WebD:No, Server:No, Cloud:No, DataAPI:No, CWP:No
 Open URL   #111   ⚠ WebD:Partial, Server:No, Cloud:No, DataAPI:No, CWP:No
 Paste   #48   ⚠ WebD:Partial
 Pause/Resume Script   #62
@@ -156,8 +158,8 @@ Perform JavaScript in Web Viewer   #175   ⚠ Server:No, Cloud:No, DataAPI:No, C
 Perform Quick Find   #150
 Perform RAG Action   #219
 Perform Script   #1
-Perform Script On Server   #164
-Perform Script On Server with Callback   #210   ⚠ Server:No, Cloud:No, DataAPI:No, CWP:No
+Perform Script on Server   #164
+Perform Script on Server with Callback   #210   ⚠ Server:No, Cloud:No, DataAPI:No, CWP:No
 Perform Semantic Find   #218
 Perform SQL Query by Natural Language   #214   ⚠ Server:Partial, Cloud:Partial, DataAPI:Partial, CWP:Partial
 Print   #43   ⚠ Go:Partial, Server:No, Cloud:No, DataAPI:No, CWP:No
@@ -172,11 +174,12 @@ Refresh Window   #80
 Relookup Field Contents   #40   ⚠ Server:Partial, Cloud:Partial, DataAPI:Partial, CWP:Partial
 Rename File   #199   ⚠ WebD:No, DataAPI:No
 Replace Field Contents   #91   ⚠ Go:Partial, WebD:Partial, Server:Partial, Cloud:Partial, DataAPI:Partial, CWP:Partial
+Replace Field Contents by Name   #249   [26.1+]   ⚠ Go:Partial, WebD:Partial, Server:Partial, Cloud:Partial, DataAPI:Partial, CWP:Partial
 Reset Account Password   #136
 Revert Record/Request   #51   ⚠ Server:Partial, Cloud:Partial, DataAPI:Partial, CWP:Partial
 Revert Transaction   #207
 Save a Copy as   #37   ⚠ Go:Partial, WebD:No, Server:No, Cloud:No, DataAPI:No, CWP:No
-Save a Copy as Add-on Package   #96   ⚠ Go:No, WebD:No, Server:No, Cloud:No, DataAPI:No, CWP:No
+Save a Copy as Add-on Package   #96   ⚠ Go:No, WebD:No, Server:26.1+, Cloud:No, DataAPI:No, CWP:No
 Save a Copy as XML   #3   ⚠ Go:No, WebD:No, DataAPI:No, CWP:No
 Save Records as Excel   #143   ⚠ Go:No, WebD:No, Server:No, Cloud:No, DataAPI:No, CWP:No
 Save Records as JSONL   #225   ⚠ Go:No, WebD:No
@@ -195,7 +198,7 @@ Set Dictionary   #209   ⚠ Go:No, WebD:No, Server:No, Cloud:No, DataAPI:No, CWP
 Set Error Capture   #86   ⚠ Server:Partial, Cloud:Partial, DataAPI:Partial, CWP:Partial
 Set Error Logging   #200   ⚠ Cloud:No, CWP:No
 Set Field   #76
-Set Field By Name   #147
+Set Field by Name   #147   (26.0: Set Field By Name)
 Set Layout Object Animation   #168
 Set Multi-User   #84   ⚠ Go:No, WebD:No, Server:No, Cloud:No, DataAPI:No, CWP:No
 Set Next Serial Value   #116
@@ -204,6 +207,7 @@ Set Selection   #130   ⚠ Go:Partial, WebD:Partial
 Set Session Identifier   #208
 Set Use System Formats   #94   ⚠ WebD:No, Server:No, Cloud:No, DataAPI:No, CWP:No
 Set Variable   #141
+Set Variable by Name   #250   [26.1+]
 Set Web Viewer   #146   ⚠ WebD:Partial, Server:No, Cloud:No, DataAPI:No, CWP:No
 Set Window Title   #124
 Set Zoom Level   #97   ⚠ Go:Partial, WebD:No, Server:No, Cloud:No, DataAPI:No, CWP:No

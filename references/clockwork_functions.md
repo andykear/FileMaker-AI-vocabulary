@@ -1,9 +1,11 @@
 ```text
-# FileMaker Pro function reference, compressed. Target: FileMaker 26. Every function below is valid at this version.
+# FileMaker Pro function reference, compressed. Target: FileMaker 26.1.1. Every function below is valid from 26.0 unless tagged [26.1+].
 # This is the authoritative function list. Rules:
 # - Only use functions that appear below. Never invent a function.
 # - Parameter order is authoritative. Optional parameters are shown in { }.
 # - If a required function is not listed here, state that no such FileMaker function exists rather than guessing.
+# - [26.1+] marks a function that exists only from FileMaker 26.1. Use it only when every client and host that evaluates the
+#   calculation is on 26.1 or later. If the version is unknown, assume 26.0.x and do not use it.
 # - Aggregate functions (Sum, Count, Average, Max, Min, StDev, StDevP, Variance, VarianceP) take '{; field...}' as shown,
 #   but each field slot also accepts: a repeating field; a related field (table::field); a comma-free list of several fields
 #   (field1;field2;...); matching-record lists including across tables (table1::a;table2::b). The signature shows the canonical form.
@@ -168,6 +170,7 @@ Get ( ScriptName ) → text
 Get ( ScriptParameter ) → text, number, date, time, timestamp, container
 Get ( ScriptResult ) → text, number, date, time, timestamp, container
 Get ( SessionIdentifier ) → text
+Get ( SortOrder ) → text   [26.1+]
 Get ( SortState ) → number
 Get ( StatusAreaState ) → number
 Get ( SystemAppearance ) → text
@@ -247,6 +250,7 @@ GetTableDDL ( tableOccurrenceNames ; ignoreError ) → text
 GetTextFromPDF ( container ) → text
 GetThumbnail ( field ; width ; height ) → container
 GetTokenCount ( text ) → number
+GetToolDefinitions ( provider ; functionName {; functionName...} ) → text   [26.1+]
 GetValue ( listOfValues ; valueNumber ) → text
 GetWidth ( field ) → number
 HexDecode ( data {; fileNameWithExtension } ) → text, container
@@ -258,6 +262,7 @@ Int ( number ) → number
 IsEmpty ( field ) → number
 IsValid ( field ) → number
 IsValidExpression ( expression ) → number
+JSONAnyValuesExist ( json ; keyOrIndexOrPath ; jsonValuesArrayToFind ) → number
 JSONDeleteElement ( json ; keyOrIndexOrPath ) → text
 JSONFormatElements ( json ) → text
 JSONGetElement ( json ; keyOrIndexOrPath ) → text, number
@@ -267,8 +272,12 @@ JSONListValues ( json ; keyOrIndexOrPath ) → text
 JSONMakeArray ( listOfValues ; separator ; type ) → text
 JSONParse ( json ) → text
 JSONParsedState ( json ) → number
+JSONRemoveValues ( json ; keyOrIndexOrPath ; jsonValuesArrayToRemove ) → text
 JSONSetElement ( json ; keyOrIndexOrPath ; value ; type ) → text
 JSONSetElement ( json ; [key1 ; value1 ; type1] {; [key2 ; value2 ; type2] ; ... [keyN ; valueN ; typeN]} ) → text
+JSONUniqueValues ( json ; keyOrIndexOrPath ) → text
+JSONValueCount ( json ; keyOrIndexOrPath ; value ) → number
+JSONValueExists ( json ; keyOrIndexOrPath ; value ) → number
 KanaHankaku ( text ) → text
 KanaZenkaku ( text ) → text
 KanjiNumeral ( text ) → text
